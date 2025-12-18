@@ -4,11 +4,12 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import { loadNavbar } from './js/navbar.js';
+import { loadFooter } from './js/footer.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   loadNavbar();
+  loadFooter();
 });
-
 
 //ANIMASI//
 
