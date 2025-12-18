@@ -1,22 +1,28 @@
+const hero = document.getElementById('hero-section');
+const nextBtn = document.getElementById('nextSlide');
 
-  const hero = document.getElementById('hero-section');
+const images = [
+  '/images/wawali.png',
+  '/images/logodps.png',
+  '/images/logo-spbe.png'
+];
 
-  const images = [
-    '/images/wawali.png',
-    '/images/logodps.png',
-    '/images/logo-spbe.png'
-  ];
+let index = 0;
 
-  let index = 0;
+hero.style.transition = 'background-image 0.8s ease-in-out, opacity 0.6s ease-in-out';
 
-  function changeBackground() {
+function changeBackground() {
+  hero.style.opacity = '0.8'; 
+
+  setTimeout(() => {
     index = (index + 1) % images.length;
     hero.style.backgroundImage = `url('${images[index]}')`;
-  }
+    hero.style.opacity = '1';
+  }, 300);
+}
 
-  // Auto slide setiap 5 detik
-  setInterval(changeBackground, 5000);
+setInterval(changeBackground, 5000);
 
-  // Tombol next manual
-  document.getElementById('nextSlide').addEventListener('click', changeBackground);
-
+if (nextBtn) {
+  nextBtn.addEventListener('click', changeBackground);
+}
