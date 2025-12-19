@@ -5,10 +5,12 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import { loadNavbar } from './js/navbar.js';
 import { loadFooter } from './js/footer.js';
+import { loadDisabilitas } from './js/disabilitas.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   loadNavbar();
   loadFooter();
+  loadDisabilitas();
 });
 
 //ANIMASI//
