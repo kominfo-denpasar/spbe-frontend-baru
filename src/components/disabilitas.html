@@ -2,107 +2,134 @@
 <div id="accessibility-root">
 
     <!-- TOMBOL AKSESIBILITAS -->
-    <div class="hidden lg:block fixed top-[150px] -translate-y-1/2 left-0 z-50">
-        <button id="accessibilityBtn" aria-label="Buka menu aksesibilitas" class="relative bg-red-700 text-white w-8 h-8 flex items-center justify-center
-                   rounded-e-2xl shadow-lg hover:bg-red-800 transition-all duration-300 hover:scale-110">
-            <i class="fas fa-wheelchair text-lg"></i>
+    <div
+        class="fixed left-0 z-50
+               top-[120px] md:top-[140px] lg:top-1/3
+               lg:-translate-y-1/2">
+
+        <button
+            id="accessibilityBtn"
+            aria-label="Buka menu aksesibilitas"
+            class="relative bg-red-700 text-white
+                   w-7 h-7 md:w-9 md:h-9 lg:w-8 lg:h-8
+                   flex items-center justify-center
+                   rounded-e-2xl shadow-lg
+                   hover:bg-red-800 transition-all duration-300
+                   hover:scale-110 active:scale-95">
+
+            <i class="fas fa-wheelchair text-base md:text-lg"></i>
         </button>
     </div>
 
     <!-- PANEL -->
-    <div id="accessibilityPanel" class="hidden fixed top-[200px] -translate-y-1/2 left-[42px]
-               w-44 bg-white shadow-lg rounded-lg p-2 border z-[60]">
+    <div
+        id="accessibilityPanel"
+        class="hidden fixed z-[60]
+               top-[100px] md:top-[140px] lg:top-[295px]
+               lg:-translate-y-1/2
+               left-[40px] md:left-[40px]
+               w-48 md:w-44
+               bg-white shadow-xl rounded-lg
+               p-3 border">
 
         <!-- HEADER -->
         <div class="flex items-center justify-between mb-2">
-            <h2 id="panelTitle" class="font-semibold text-sm ml-14">
+            <h2 id="panelTitle" class="font-semibold text-xs md:text-sm">
                 Sarana
             </h2>
 
-            <!-- TOMBOL CLOSE -->
-            <button id="closeAccessibilityPanel" aria-label="Tutup menu aksesibilitas"
-                class="text-gray-500 hover:text-red-600 text-sm font-bold transition">
+            <button
+                id="closeAccessibilityPanel"
+                aria-label="Tutup menu aksesibilitas"
+                class="text-gray-500 hover:text-red-600
+                       text-sm font-bold transition">
                 ✕
             </button>
         </div>
 
         <!-- SWITCH BAHASA -->
-        <div class="flex bg-gray-200 p-[2px] rounded-full mb-2 text-[10px]">
-            <button id="langID" class="lang-btn flex-1 bg-white text-black rounded-full py-[2px] font-semibold">
+        <div class="flex bg-gray-200 p-[3px] rounded-full mb-2 text-[11px]">
+            <button
+                id="langID"
+                class="lang-btn flex-1 bg-white text-black rounded-full py-[1px] font-semibold">
                 ID
             </button>
-            <button id="langEN" class="lang-btn flex-1 text-gray-600 rounded-full py-[2px]">
+            <button
+                id="langEN"
+                class="lang-btn flex-1 text-gray-600 rounded-full py-[1px]">
                 EN
             </button>
         </div>
 
         <!-- MENU -->
-        <div class="flex flex-col gap-[2px] text-[11px] font-medium">
+        <div class="flex flex-col gap-1 text-[11px] font-medium">
 
             <button onclick="toggleVoiceMode(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-volume-high w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-volume-high w-4"></i>
                 <span data-key="voiceMode"></span>
             </button>
 
             <button onclick="increaseFont(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-magnifying-glass-plus w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-magnifying-glass-plus w-4"></i>
                 <span data-key="increaseText"></span>
             </button>
 
             <button onclick="decreaseFont(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-magnifying-glass-minus w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-magnifying-glass-minus w-4"></i>
                 <span data-key="decreaseText"></span>
             </button>
 
             <button onclick="toggleGrayScale(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-grip-lines w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-grip-lines w-4"></i>
                 <span data-key="grayscale"></span>
             </button>
 
             <button onclick="toggleHighContrast(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-circle-half-stroke w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-circle-half-stroke w-4"></i>
                 <span data-key="highContrast"></span>
             </button>
 
             <button onclick="enableDarkMode(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-eye w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-eye w-4"></i>
                 <span data-key="negativeContrast"></span>
             </button>
 
             <button onclick="enableLightMode(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-lightbulb w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-lightbulb w-4"></i>
                 <span data-key="lightBackground"></span>
             </button>
 
             <button onclick="toggleReadableFont(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-font w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-font w-4"></i>
                 <span data-key="readableFont"></span>
             </button>
 
             <button onclick="toggleUnderlineLinks(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-underline w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-underline w-4"></i>
                 <span data-key="underlineLinks"></span>
             </button>
 
             <button onclick="toggleJustifyText(); toggleMenuActive(this)"
-                class="menu-btn flex items-center gap-2 py-[2px] text-left text-gray-600">
-                <i class="fas fa-align-left w-3"></i>
+                class="menu-btn flex items-center gap-2 py-[1px] text-gray-600 hover:text-black">
+                <i class="fas fa-align-left w-4"></i>
                 <span data-key="justifyText"></span>
             </button>
 
             <!-- RESET -->
-            <button onclick="resetAll()" class="flex items-center gap-2 py-[3px] text-left
-                       bg-red-100 text-red-700 rounded font-semibold">
-                <i class="fas fa-rotate-left w-3"></i>
+            <button onclick="resetAll()"
+                class="flex items-center gap-2 py-[4px]
+                       bg-red-100 text-red-700
+                       rounded font-semibold">
+                <i class="fas fa-rotate-left w-4"></i>
                 <span data-key="reset"></span>
             </button>
 
