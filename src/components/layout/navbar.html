@@ -26,20 +26,19 @@
 
     <!-- ================= MAIN NAV ================= -->
     <nav class="bg-[#233445] text-white" aria-label="Main navigation">
-        <div class="max-w-[1400px] mx-auto px-6 py-0 flex items-center justify-between">
+        <div class="max-w-[1400px] mx-auto px-6 py-2 flex items-center justify-between">
 
-            <!-- LOGO -->
             <a href="/" class="flex items-center gap-2">
-                <img src="/images/logodps.png" alt="Logo Denpasar" class="h-14 md:h-20 w-auto" />
+                <img src="/images/kota_denpasar.png" alt="Logo Denpasar" class="h-12 md:h-14 w-auto" />
 
-                <div class="w-[1.5px] h-10 bg-white/70"></div>
+                <div class="w-[1.5px] h-12 bg-white/70"></div>
 
                 <div class="leading-tight">
-                    <span class="text-[15px] md:text-[20px] font-bold tracking-wide block">
-                        DENPASAR
+                    <span class="text-[18px] md:text-[22px] font-bold tracking-wide block">
+                        SPBE
                     </span>
-                    <span class="text-[11px] md:text-[12px] tracking-wide block opacity-90">
-                        PRAMA SEWAKA
+                    <span class="text-[14px] md:text-[16px] tracking-wide block opacity-90">
+                        Kota Denpasar
                     </span>
                 </div>
             </a>
@@ -56,25 +55,19 @@
                         TENTANG SPBE
                     </a>
                 </li>
-
-                <li class="relative group">
-                    <div data-page="informasi" class="flex items-center gap-1 menu-link cursor-pointer">
-                        INFORMASI <i class="fa-solid fa-chevron-down text-xs"></i>
-                    </div>
-
-                    <div
-                        class="absolute left-0 mt-2 hidden group-hover:block bg-white text-black rounded shadow py-2 w-40">
-                        <a href="pengetahuan.html" data-page="pengetahuan" class="block px-4 py-2 hover:text-black/70">
-                            Pengetahuan
-                        </a>
-                        <a href="dokumen.html" data-page="dokumen" class="block px-4 py-2 hover:text-black/70">
-                            Dokumen
-                        </a>
-                    </div>
+                <li>
+                    <a href="pengetahuan.html" data-page="pengetahuan" class="menu-link hover:text-white/70">
+                        PENGETAHUAN
+                    </a>
                 </li>
+                <li>
+                    <a href="regulasi.html" data-page="regulasi" class="menu-link hover:text-white/70">
+                        REGULASI
+                    </a>
+                </li>
+
             </ul>
 
-            <!-- DESKTOP SEARCH -->
             <form class="hidden md:flex relative items-center w-56 bg-white rounded-full px-4 py-1">
                 <i class="fa fa-search text-gray-500"></i>
                 <input type="search" placeholder="Search" class="ml-2 w-full text-black text-sm focus:outline-none" />
@@ -106,19 +99,19 @@
                 </li>
 
                 <li>
-                    <details class="group">
-                        <summary class="cursor-pointer py-1">INFORMASI</summary>
-                        <div class="pl-4 mt-2 flex flex-col gap-2">
-                            <a href="pengetahuan.html" data-page="pengetahuan"
-                                class="text-sm mobile-link hover:text-black/70">
-                                Pengetahuan
-                            </a>
-                            <a href="dokumen.html" data-page="dokumen" class="text-sm mobile-link hover:text-black/70">
-                                Dokumen
-                            </a>
-                        </div>
-                    </details>
+                    <a href="pengetahuan.html" data-page="pengetahuan"
+                        class="block py-1 mobile-link hover:text-white/70 transform transition-transform duration-200 active:scale-60">
+                        PENGETAHUAN
+                    </a>
                 </li>
+
+                <li>
+                    <a href="regulasi.html" data-page="regulasi"
+                        class="block py-1 mobile-link hover:text-white/70 transform transition-transform duration-200 active:scale-60">
+                        REGULASI
+                    </a>
+                </li>
+
             </ul>
 
             <!-- MOBILE SEARCH -->
