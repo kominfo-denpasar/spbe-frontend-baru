@@ -3,7 +3,7 @@
 Website frontend statis berbasis **HTML5** dan **Tailwind CSS** yang dirancang dengan tampilan modern, responsif, dan ramah pengguna, khususnya untuk mendukung kebutuhan **Sistem Pemerintahan Berbasis Elektronik (SPBE)** serta project untuk siswa PKL.
 
 ## 📌 Deskripsi
-Proyek ini dikembangkan sebagai bagian dari implementasi tampilan antarmuka website SPBE untuk lingkungan pemerintahan.
+Project ini dikembangkan sebagai bagian dari implementasi tampilan antarmuka website SPBE untuk lingkungan pemerintahan.
 Selain itu, proyek ini juga digunakan sebagai media pembelajaran dan laporan Praktik Kerja Lapangan (PKL)/MAGANG.
 
 Fokus utama pengembangan meliputi:
