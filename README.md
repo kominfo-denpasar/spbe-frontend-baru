@@ -1,18 +1,31 @@
 # SPBE Frontend Baru
 
-Project website statis berbasis **HTML5** dan **Tailwind CSS** yang dirancang dengan tampilan modern, responsif, dan mudah dikembangkan.
+Website frontend statis berbasis **HTML5** dan **Tailwind CSS** yang dirancang dengan tampilan modern, responsif, dan ramah pengguna, khususnya untuk mendukung kebutuhan **Sistem Pemerintahan Berbasis Elektronik (SPBE)** serta project untuk siswa PKL.
 
 ## 📌 Deskripsi
-Project ini dibuat untuk kebutuhan landing page / company profile / portfolio dengan fokus pada:
-- Tampilan bersih dan modern
-- Responsive di berbagai ukuran layar
-- Struktur kode yang sederhana dan mudah dipahami
+Proyek ini dikembangkan sebagai bagian dari implementasi tampilan antarmuka website SPBE untuk lingkungan pemerintahan.
+Selain itu, proyek ini juga digunakan sebagai media pembelajaran dan laporan Praktik Kerja Lapangan (PKL)/MAGANG.
+
+Fokus utama pengembangan meliputi:
+
+- Tampilan antarmuka yang bersih, profesional, dan modern
+
+- Responsif pada berbagai ukuran perangkat (mobile, tablet, desktop)
+
+- Struktur kode yang semantic, rapi, dan mudah dipahami
+
+- Mudah dikembangkan
 
 ## ✨ Fitur
+- fitur aksesibilitas (disabilitas) untuk meningkatkan inklusivitas
+
 - Responsive design (mobile, tablet, desktop)
+
 - Styling menggunakan Tailwind CSS (utility-first)
-- Struktur HTML rapi dan terorganisir
-- Mudah dikustomisasi (warna, font, layout)
+
+- Struktur HTML5 semantic dan terorganisir
+
+- Mudah dikustomisasi (warna, font, layout, konten)
 
 ## 🛠️ Teknologi yang Digunakan
 - HTML5
@@ -32,11 +45,29 @@ cd spbe-frontend-baru
 npm install
 ```
 
+### 3. Jalankan Project
+```bash
+npm run dev
+```
+
 ## 📝 Catatan
-- Project ini tidak menggunakan JavaScript framework
-- Cocok untuk website statis dan prototype UI
-- Dapat dikembangkan lebih lanjut ke framework seperti Next.js atau Vue
+Project ini tidak menggunakan JavaScript framework
+
+Cocok untuk:
+- Website statis
+- Prototype UI/UX
+- Dokumentasi tampilan sistem SPBE
+
+Dapat dikembangkan lebih lanjut menggunakan framework modern seperti:
+- Next.js
+- Vue.js
+
+Project ini dibuat untuk:
+- Kebutuhan pemerintahan
+- Tugas dan laporan PKL siswa
 
 ## 👤 Author
 
-nama author
+- I Gusti Made Dion Garitna Arya Putra
+- I Putu Sandika Putra Wirasana
+- Gede Agus Indra Wardana
