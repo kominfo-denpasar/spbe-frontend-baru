@@ -68,6 +68,6 @@ Project ini dibuat untuk:
 
 ## 👤 Author
 
-- I Gusti Made Dion Garitna Arya Putra
-- I Putu Sandikha Putra Wirasana
-- Gede Agus Indra Wardana
+- I Gusti Made Dion Garitna Arya Putra (Siswa SMK N 1 Sukawati)
+- I Putu Sandikha Putra Wirasana (Mahasiswa UNDIKNAS)
+- Gede Agus Indra Wardana (Mahasiswa UNDIKNAS)
