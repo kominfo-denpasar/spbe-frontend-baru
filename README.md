@@ -69,5 +69,5 @@ Project ini dibuat untuk:
 ## 👤 Author
 
 - I Gusti Made Dion Garitna Arya Putra
-- I Putu Sandika Putra Wirasana
+- I Putu Sandikha Putra Wirasana
 - Gede Agus Indra Wardana
